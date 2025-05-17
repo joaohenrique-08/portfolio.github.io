@@ -1,0 +1,83 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #0f0;
+      font-family: 'Arial', sans-serif;
+      position: relative;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .foto-perfil {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: #222;
+      margin: 0 auto 1rem;
+    }
+
+    .redes-sociais {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .redes-sociais a {
+      color: #0f0;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .redes-sociais a:hover {
+      transform: scale(1.2);
+      color: #0f0;
+    }
+
+ 
+
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .projeto {
+      background: #111;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #0f0;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .projeto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #0f0;
+    }
+
+    .imagem-projeto {
+      width: 100%;
+      height: 200px;
+      background: #333;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      animation: fadeIn 3s ease-in-out infinite alternate;
+    }
+
+    footer {
+      text-align: center;
+      color: rgb(250, 251, 250);
+      padding: 1rem;
+    }
